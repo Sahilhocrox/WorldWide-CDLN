@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19B3D7</color>
+    <color name="colorAccent">#19B3D7</color>
+    <color name="darkColorPrimary">#0486a4</color>
+    <color name="colorWhite">@android:color/white</color>
+    <color name="ColorblackText">#292929</color>
+    <color name="colormidgrey">#f8e1e1e1</color>
+    <color name="colordarkgrey">#f8939393</color>
+    <color name="text_chat">#797979</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="colorgreytext">#626262</color>
+    <color name="colorTransPrimary">#6d19b3d7</color>
+    <color name="orange">#6de78b12</color>
+    <color name="grey">#E9ECEA</color>
+    <color name="colorBackGrey">#F4F4F4</color>
+</resources>

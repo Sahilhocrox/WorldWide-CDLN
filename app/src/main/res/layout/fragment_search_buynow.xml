@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context="com.hocrox.worldwidecdln.warehouse.AddStorageUnitActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title"
+                        android:textColor="@color/ColorblackText" />
+
+                    <com.hocrox.worldwidecdln.utils.CustomEditText
+                        android:id="@+id/etTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editext_modification"
+                        android:hint="@string/title"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colordarkgrey"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:textColor="@color/ColorblackText" />
+
+                    <com.hocrox.worldwidecdln.utils.CustomEditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editext_modification"
+                        android:hint="Phone"
+
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colordarkgrey"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvCompanyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company/Name"
+                        android:textColor="@color/ColorblackText" />
+
+                    <com.hocrox.worldwidecdln.utils.CustomEditText
+                        android:id="@+id/etCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editext_modification"
+                        android:hint="Company/Name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colordarkgrey"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/emailAddress"
+                        android:textColor="@color/ColorblackText" />
+
+                    <com.hocrox.worldwidecdln.utils.CustomEditText
+                        android:id="@+id/etEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editext_modification"
+                        android:hint="@string/emailAddress"
+
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colordarkgrey"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address"
+                        android:textColor="@color/ColorblackText" />
+
+                    <com.hocrox.worldwidecdln.utils.CustomEditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editext_modification"
+                        android:hint="@string/address"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colordarkgrey"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address"
+                        android:textColor="@color/ColorblackText"
+                        android:visibility="invisible" />
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvMapview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/textview_modification"
+                        android:gravity="center"
+                        android:text="@string/mapView"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Add Photo"
+                android:textColor="@color/ColorblackText" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivAddPhoto"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/add_photo" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/paymentType"
+                android:textColor="@color/ColorblackText" />
+
+            <include layout="@layout/view_gry_spinner" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/shipTo"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etAddde"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_modification"
+                android:gravity="start"
+                android:hint="Add Ship Address"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colordarkgrey"
+                android:textSize="13sp" />
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/shippinghandling"
+                android:textColor="@color/ColorblackText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/quantity"
+                    android:textColor="@color/ColorblackText" />
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:id="@+id/etQuantity"
+                    android:layout_width="50dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/editext_modification"
+                    android:hint="0"
+                    android:imeOptions="actionNext"
+
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colordarkgrey"
+                    android:textSize="13sp" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvAddBid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/textview_modification"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/add"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvCarrierType1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/carrierType"
+                    android:textColor="@color/ColorblackText" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvCarrierType1"
+                    android:layout_alignStart="@+id/tvWCDL"
+                    android:layout_toRightOf="@+id/tvCarrierType1"
+                    android:text="@string/prices"
+                    android:textColor="@color/ColorblackText" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvUsps1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCarrierType1"
+
+                    android:layout_marginTop="7dp"
+                    android:text="@string/usps"
+                    android:textColor="@color/colorgreytext" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvUsps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvUsps1"
+                    android:layout_alignStart="@+id/tvWCDL"
+                    android:layout_toRightOf="@+id/tvUsps1"
+                    android:text="@string/free"
+                    android:textColor="@color/colorgreytext" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvFedEx1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUsps1"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/fedEx"
+                    android:textColor="@color/colorgreytext" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvFedEx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvFedEx1"
+                    android:layout_alignStart="@+id/tvWCDL"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tvFedEx1"
+                    android:text="$5.00"
+
+                    android:textColor="@color/colorgreytext" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvWCDL1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFedEx1"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/wcdlcarrier"
+                    android:textColor="@color/colorgreytext" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvWCDL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvWCDL1"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tvWCDL1"
+                    android:text="$5.00"
+                    android:textColor="@color/colorgreytext" />
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:id="@+id/etCarrier"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvWCDL1"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/tvWCDL1"
+                    android:background="@drawable/editext_modification"
+                    android:hint="@string/search"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colordarkgrey"
+                    android:textSize="13sp" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tvWCDL"
+                    android:layout_below="@+id/tvWCDL1"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/etCarrier"
+                    android:background="@drawable/textview_modification"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/search"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+
+
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvUsps"
+                    android:id="@+id/cb_us"
+                    android:layout_toEndOf="@+id/tvSearch"
+                    android:layout_toRightOf="@+id/tvUsps" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvFedEx"
+                    android:layout_toEndOf="@+id/tvSearch"
+                    android:id="@+id/cb_fed"
+
+                    android:layout_toRightOf="@+id/tvFedEx" />
+
+                <RadioButton
+                    android:id="@+id/cb_wcdls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignBaseline="@+id/tvSearch"
+                    android:layout_toRightOf="@+id/tvSearch" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment"
+                    android:textColor="@color/ColorblackText" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvitem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="7dp"
+                        android:text="@string/item"
+                        android:textColor="@color/colorgreytext" />
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/tvOrderTotal"
+                        android:layout_marginTop="7dp"
+                        android:layout_toRightOf="@+id/tvitem1"
+                        android:text="$ 4.0"
+
+                        android:textColor="@color/colorgreytext" />
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvShipping1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvitem1"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shipping"
+                        android:textColor="@color/colorgreytext" />
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvShipping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/tvOrderTotal"
+                        android:layout_below="@+id/tvitem1"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvitem1"
+
+                        android:text="$ 4.0"
+                        android:textColor="@color/colorgreytext" />
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvOrderTotal1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvShipping"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/ordertotal"
+                        android:textColor="@color/colorgreytext" />
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvOrderTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvShipping"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvOrderTotal1"
+                        android:text="$ 4.0"
+                        android:textColor="@color/colorgreytext" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvConfirmPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textview_modification"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="12dp"
+                android:paddingTop="13dp"
+                android:text="@string/confirmPayment"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGrey"
+    android:orientation="vertical"
+    tools:context="com.hocrox.worldwidecdln.driverdetail.DriverInsuranceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/vehiclephoto"
+                android:textColor="@color/ColorblackText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/car" />
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvTakePhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/blue_stroke_rectangle"
+                        android:padding="5dp"
+                        android:text="@string/takeAPhoto"
+                        android:textColor="@color/colorgreytext"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+
+
+                    android:text="@string/plateNumber"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="14sp" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:id="@+id/etPlateNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/white_rectangle"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+
+                    android:padding="12dp"
+                    android:singleLine="true"
+
+                    android:textColorHint="@color/colorgreytext"
+                    android:textSize="14sp" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+
+
+                    android:text="@string/vehicleType"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="14sp" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:id="@+id/etVehicleType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/white_rectangle"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+
+                    android:padding="12dp"
+                    android:singleLine="true"
+
+                    android:textColorHint="@color/colorgreytext"
+                    android:textSize="14sp" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+
+
+                    android:text="@string/vehicleYear"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="14sp" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:id="@+id/etEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/white_rectangle"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+
+                    android:padding="12dp"
+                    android:singleLine="true"
+
+                    android:textColorHint="@color/colorgreytext"
+                    android:textSize="14sp" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+
+
+                    android:text="@string/vehicleMake"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="14sp" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:id="@+id/etvehicleMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/white_rectangle"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+
+                    android:padding="12dp"
+                    android:singleLine="true"
+
+                    android:textColorHint="@color/colorgreytext"
+                    android:textSize="14sp" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+
+
+                    android:text="@string/vehicleModel"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="14sp" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:id="@+id/etvehicleModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/white_rectangle"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+
+                    android:padding="12dp"
+                    android:singleLine="true"
+
+                    android:textColorHint="@color/colorgreytext"
+                    android:textSize="14sp" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+
+
+                    android:text="@string/vehicleRegistration"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="14sp" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:id="@+id/etvehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/white_rectangle"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/calender"
+
+                    android:textColorHint="@color/colorgreytext"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/blue_recctangle_button"
+                        android:text="@string/cancel"
+                        android:textColor="@color/colorWhite" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/blue_recctangle_button"
+                        android:text="@string/update"
+                        android:textColor="@color/colorWhite" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

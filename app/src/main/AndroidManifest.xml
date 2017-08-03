@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hocrox.worldwidecdln">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBcNSZNJ1tUk05ax3kUoqJR0PK2-IInfu4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".authentication.SignUpActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".authentication.SignActivity" />
+        <activity android:name=".authentication.LoginSignUpActivity" />
+        <activity android:name=".clientdata.ClientProfileActivity" />
+        <activity android:name=".driverdetail.DriverInsuranceActivity" />
+        <activity android:name=".driverdetail.DriverLicenseActivity" />
+        <activity android:name=".driverdetail.DriverMenuActivity" />
+        <activity android:name=".driverdetail.DriverProfileActivity" />
+        <activity android:name=".vehicledetail.MyVehicleDetailActivity" />
+        <activity android:name=".vehicledetail.VehicleRegistrationActivity" />
+        <activity android:name=".trackdetail.TrackActivity" />
+        <activity android:name=".driverdetail.DriverInfoActivity" />
+        <activity android:name=".clientdata.ClientProfileSettingActivity" />
+        <activity android:name=".bookingdetail.ConfirmationActivity" />
+        <activity android:name=".profilerelatedsettings.ProfileSettings" />
+        <activity android:name=".bookingdetail.ShppingActivity" />
+        <activity android:name=".warehouse.WareHouseAreaActivity" />
+        <activity android:name=".bookingdetail.NeedLitActivity" />
+        <activity android:name=".bookingdetail.DropOffLocationActivity" />
+        <activity android:name=".authentication.NewPasswordActivtiy" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".productdetail.ProductListActivity" />
+        <activity android:name=".productdetail.productDetailActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".bookingdetail.ConfirmationsActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".warehouse.WareAndStorageActivity" />
+        <activity android:name=".warehouse.StorageUnitActivity" />
+        <activity android:name=".warehouse.RequestStorageUnitActivity" />
+        <activity android:name=".warehouse.SubmitStorageActivity" />
+        <activity android:name=".warehouse.SubmitStoreActivity" />
+        <activity android:name=".warehouse.StorageUnitSearchResutActivity" />
+        <activity android:name=".warehouse.AddStorageUnitActivity" />
+        <activity android:name=".warehouse.SearchStorageUnitActivity" />
+        <activity android:name=".warehouse.ReuestStorageUnitActivity" />
+        <activity android:name=".warehouse.AdvanceUserStorageActivity" />
+        <activity android:name=".warehouse.RequestStoreUnitActivity" />
+        <activity android:name=".lifts.NeedLiftHomeActivity" />
+        <activity android:name=".lifts.PaymentOptionActivity" />
+        <activity android:name=".lifts.DriverListActivity" />
+        <activity android:name=".lifts.AddNoteActivity" />
+        <activity android:name=".lifts.PaymentInformationActivity" />
+        <activity android:name=".lifts.driverInfo.DriverArrivedActivity" />
+        <activity android:name=".lifts.RequestingCarrierActivity" />
+        <activity android:name=".lifts.driverInfo.DriverDropOffActivity" />
+        <activity android:name=".lifts.CarrierInterestedActivity" />
+        <activity android:name=".lifts.RoundTripActivity" />
+        <activity android:name=".lifts.PostListActivity" />
+        <activity android:name=".lifts.DriverTripRequestActivity" />
+        <activity android:name=".lifts.roundtrip.RoundTripHomeActivity" />
+        <activity android:name=".lifts.multistop.MultiStopHomeActivity" />
+        <activity android:name=".lifts.driverInfo.DriverTrackingActivity" />
+        <activity android:name=".lifts.CancelRequestActivity" />
+        <activity android:name=".lifts.driverInfo.DriverChatActivity" />
+        <activity android:name=".lifts.driverInfo.DriverOntoActivity" />
+        <activity android:name=".lifts.clientinfo.ClientOntoDestinationActivity" />
+        <activity android:name=".lifts.clientinfo.ClientChatActivity" />
+        <activity android:name=".lifts.clientinfo.DriverClientArrivalActivity" />
+        <activity android:name=".lifts.clientinfo.ClientDropOffActivity" />
+        <activity android:name=".lifts.multistop.MultiStopPostActivity" />
+        <activity android:name=".lifts.roundtrip.RoundTripPostListActivity" />
+        <activity android:name=".ridealong.RideAlongHome" />
+        <activity android:name=".ridealong.RideAddNoteActivity" />
+        <activity android:name=".ridealong.RideDriverListActivity" />
+        <activity android:name=".ridealong.RidePaymentInformationActivity" />
+        <activity android:name=".ridealong.RideRequestingCarrierActivity" />
+        <activity android:name=".ridealong.RidePaymentOptionActivity" />
+        <activity android:name=".ridealong.RideDriverTrackingActivity" />
+        <activity android:name=".ridealong.clientinfo.RideDriverClientArrivalActivity" />
+        <activity android:name=".ridealong.clientinfo.RdieClientDropOffActivity" />
+        <activity android:name=".ridealong.clientinfo.RideClientChatActivity" />
+        <activity android:name=".ridealong.clientinfo.RideClientOntoDestActivity" />
+        <activity android:name=".ridealong.clientinfo.RideClientTrackingActivity" />
+        <activity android:name=".ridealong.driverinfo.RideDriverArrivedActivity" />
+        <activity android:name=".ridealong.driverinfo.RideDriverChatActivity" />
+        <activity android:name=".ridealong.driverinfo.RideDriverDropOffActivity" />
+        <activity android:name=".ridealong.driverinfo.RideDriverOntoDestActivity" />
+        <activity android:name=".ridealong.driverinfo.RideDriverTripReqActivity" />
+        <activity android:name=".ridealong.roundtrip.RideCarrierInterestedActivity" />
+        <activity android:name=".ridealong.roundtrip.RidePostListActivity" />
+        <activity android:name=".ridealong.roundtrip.RideRoundTripHomeActivity" />
+        <activity android:name=".lifts.clientinfo.ClientTrackingActivity" />
+        <activity android:name=".imdriver.DriverHomeActivity" />
+        <activity android:name=".imdriver.Fragments.HomeActivtiy" />
+        <activity android:name=".inventory.InventoryHomeActivity" />
+        <activity android:name=".inventory.myInventory.MyInventoryHomeActivity" />
+        <activity android:name=".inventory.search.SearchHomeActivity" />
+        <activity android:name=".inventory.additem.additem.AddItemHomeActivity" />
+        <activity android:name=".inventory.sellingauction.SellingAuctionHomeActivity" />
+        <activity android:name=".inventory.watchlist.WatchListHomeActivity" />
+        <activity android:name=".inventory.bought.BoughtHomeActivity" />
+        <activity android:name=".inventory.posts.PostHomeActivity" />
+        <activity android:name=".inventory.sold.SoldHomeActivity"></activity>
+    </application>
+
+</manifest>

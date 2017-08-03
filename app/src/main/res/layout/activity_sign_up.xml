@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="signup"
+            type="com.hocrox.worldwidecdln.databinding.SignUpModel"/>
+
+        <variable
+            name="instance"
+            type="com.hocrox.worldwidecdln.authentication.SignUpActivity"/>
+
+    </data>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_back"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/memberInformation"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/app_logo_small" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_rootLayout"
+        android:background="@color/colorWhite" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="27dp"
+            android:orientation="vertical">
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle_modification"
+                android:hint="@string/firstName"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="12dp"
+                android:text="@{signup.name}"
+                android:singleLine="true"
+                android:textColorHint="@color/colorgreytext"
+                android:textSize="14sp" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/white_rectangle_modification"
+                android:hint="@string/lastName"
+                android:imeOptions="actionNext"
+                android:text="@{signup.lastName}"
+
+                android:inputType="text"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorgreytext"
+                android:textSize="14sp" />
+
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/white_rectangle_modification"
+                android:hint="@string/city"
+                android:imeOptions="actionNext"
+                android:text="@{signup.city}"
+
+                android:inputType="text"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorgreytext"
+                android:textSize="14sp" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/white_rectangle_modification"
+                android:hint="@string/country"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:text="@{signup.country}"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorgreytext"
+                android:textSize="14sp" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etConfirmEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/white_rectangle_modification"
+                android:hint="@string/confirmEmailAddress"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:text="@{signup.email}"
+
+                android:padding="12dp"
+                android:singleLine="true"
+
+                android:textColorHint="@color/colorgreytext"
+                android:textSize="14sp" />
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+
+                android:text="I like to join  this country's network"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <include layout="@layout/view_spinner" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="@string/referenceNumber"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etMemberRep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/white_rectangle_modification"
+                android:hint="@string/member"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:text="@{signup.refNo}"
+                android:textColorHint="@color/colorgreytext"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_modification"
+                android:text="@string/signup"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_transrectangle_button"
+                android:text="@string/cancel"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+</layout>

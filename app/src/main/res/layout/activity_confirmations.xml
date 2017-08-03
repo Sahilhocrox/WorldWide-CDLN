@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackGrey"
+    android:layout_height="match_parent"
+    tools:context="com.hocrox.worldwidecdln.bookingdetail.ConfirmationsActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+   android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:text="On Route to Pick Up"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:text="Estimated Time of Arrival 12 minutes"
+        android:textSize="14sp"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="30dp"
+    android:text="Request Pick Up"
+    android:textColor="@color/colorWhite"
+    android:background="@drawable/button_modification"
+    android:layout_height="40dp" />
+
+
+</LinearLayout>
+
+</RelativeLayout>

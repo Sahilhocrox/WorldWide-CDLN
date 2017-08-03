@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/btnClose"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_modification"
+                    android:gravity="center"
+                    android:text="Close"
+                    android:textColor="@color/colorWhite" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/btnHelp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_modification"
+                    android:gravity="center"
+                    android:text="Help"
+                    android:textColor="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/btnChangeNetwork"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_modification"
+                    android:gravity="center"
+                    android:text="Change Networks"
+                    android:textColor="@color/colorWhite" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/btnMyInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_modification"
+                    android:gravity="center"
+                    android:text="My Info"
+                    android:textColor="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/onlystroke_rectangle"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/clientPost"
+                android:textColor="@color/ColorblackText" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl_clientposts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

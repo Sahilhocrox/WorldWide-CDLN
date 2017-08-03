@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvContinent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/textview_modification"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="NorthAmerica"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvNation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_modification"
+            android:gravity="center"
+            android:padding="10dp"
+
+            android:text="USA"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvNetworks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/textview_modification"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ALL NETWORKS"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+
+
+                                <RadioButton
+                                    android:id="@+id/rb_Seller"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="@string/imselling" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_Accept"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:padding="5dp"
+                                    android:text="@string/myAuction" />
+                                    </LinearLayout>
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                        </RadioGroup>
+                    </LinearLayout>
+                </RadioGroup>
+
+            </LinearLayout>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <com.hocrox.worldwidecdln.utils.CustomEditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/etAdults2nd"
+
+            android:layout_toRightOf="@+id/tvAdults"
+            android:layout_weight="1"
+            android:background="@drawable/white_rectangle_modification"
+            android:gravity="center_vertical"
+            android:hint="@string/smallSearch"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+
+            android:textColor="@color/ColorblackText"
+            android:textSize="14sp" />
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textview_modification"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/search"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_sellinglist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="7dp">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

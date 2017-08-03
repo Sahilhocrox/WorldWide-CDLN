@@ -1,0 +1,333 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGrey"
+    android:orientation="vertical"
+    tools:context="com.hocrox.worldwidecdln.driverdetail.DriverProfileActivity">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/ivBackProfile"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/driver_menu" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            app:layout_anchor="@id/ivBackProfile"
+            app:layout_anchorGravity="left|bottom">
+
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:background="@drawable/driver_menu" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Sahil Goyal"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:id="@+id/tvDriverInformation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/blue_stroke_rectangle"
+                        android:padding="5dp"
+                        android:text="@string/contactDriver"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="3.3"
+                    android:stepSize="0.1" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvLicense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/licenseNumber"
+                android:textColor="@color/colorgreytext" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvLicenseNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/licenseNumber"
+                android:textColor="@color/colorgreytext" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/licenseState"
+                android:textColor="@color/colorgreytext" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvLicenseState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/licenseNumber"
+                android:textColor="@color/colorgreytext" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vehicleType"
+                android:textColor="@color/colorgreytext" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvVehicleType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/licenseNumber"
+                android:textColor="@color/colorgreytext" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#efeded"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vehicleMake"
+                android:textColor="@color/colorgreytext" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvVehicleMake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/licenseNumber"
+                android:textColor="@color/colorgreytext" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vehicleModel"
+                android:textColor="@color/colorgreytext" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvVehicleModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/licenseNumber"
+                android:textColor="@color/colorgreytext" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#efeded"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:orientation="vertical">
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/messageToDriver"
+            android:textColor="@color/ColorblackText" />
+
+
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorgreytext" />
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#efeded"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/button_modification"
+            android:text="@string/requestDriver"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_modification"
+            android:text="@string/back"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

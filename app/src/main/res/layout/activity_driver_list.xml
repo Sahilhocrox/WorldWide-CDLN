@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hocrox.worldwidecdln.lifts.DriverListActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBackArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/leftarrow" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/ivBackArrow"
+                android:gravity="center_horizontal"
+                android:text="@string/needALift"
+                android:id="@+id/tv_toolbar"
+                android:textColor="@color/ColorblackText" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colormidgrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+       android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="7dp"
+            android:id="@+id/tvVehicleSelected1"
+            android:text="Vehicle Selected"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:layout_toRightOf="@+id/tvVehicleSelected1"
+            android:padding="7dp"
+            android:text="Car"
+            android:id="@+id/tvVehicleSelected"
+            android:layout_alignBaseline="@+id/tvVehicleSelected1"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="7dp"
+            android:layout_below="@+id/tvVehicleSelected1"
+            android:text="Trip"
+            android:id="@+id/tvTrip1"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_below="@+id/tvVehicleSelected1"
+            android:layout_toRightOf="@+id/tvTrip1"
+            android:id="@+id/tvTrip"
+            android:layout_alignStart="@+id/tvVehicleSelected"
+            android:layout_alignBaseline="@+id/tvTrip1"
+            android:padding="7dp"
+            android:text="One Stop"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:id="@+id/tvAdd1"
+              android:layout_below="@+id/tvTrip"
+            android:padding="7dp"
+            android:text="Added Items"
+            android:textColor="@color/ColorblackText" />
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="start"
+            android:layout_alignStart="@+id/tvVehicleSelected"
+            android:layout_alignBaseline="@+id/tvAdd1"
+            android:layout_below="@+id/tvAdd1"
+            android:layout_toRightOf="@+id/tvAdd1"
+            android:id="@+id/tvAdd"
+            android:padding="7dp"
+            android:text="Vehicle Selected"
+            android:textColor="@color/ColorblackText" />
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="7dp"
+            android:layout_below="@+id/tvAdd1"
+            android:text="Destination"
+            android:id="@+id/tvDestination1"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="7dp"
+            android:layout_alignStart="@+id/tvAdd"
+            android:layout_alignBaseline="@+id/tvDestination1"
+            android:layout_below="@+id/tvAdd1"
+            android:layout_toRightOf="@+id/tvAdd1"
+            android:id="@+id/tvDestination"
+            android:text="Phase 7,Industrial Area Mohali"
+            android:textColor="@color/ColorblackText" />
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="7dp"
+            android:text="Time"
+            android:layout_below="@+id/tvDestination1"
+            android:id="@+id/tvTime1"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="7dp"
+            android:layout_alignStart="@+id/tvDestination"
+            android:layout_alignBaseline="@+id/tvTime1"
+            android:layout_below="@+id/tvAdd1"
+            android:layout_toRightOf="@+id/tvAdd1"
+            android:id="@+id/tvTime"
+
+            android:text="22:10"
+            android:textColor="@color/ColorblackText" />
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="7dp"
+            android:text="Date"
+            android:layout_below="@+id/tvTime1"
+            android:id="@+id/tvDate1"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="7dp"
+            android:layout_alignStart="@+id/tvTime"
+            android:layout_alignBaseline="@+id/tvDate1"
+            android:layout_below="@+id/tvAdd1"
+            android:layout_toRightOf="@+id/tvAdd1"
+            android:id="@+id/tvDate"
+
+            android:text="22-10-17"
+            android:textColor="@color/ColorblackText" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colormidgrey" />
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/ColorblackText"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/selectDriver" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colormidgrey" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_driverlist"
+    android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

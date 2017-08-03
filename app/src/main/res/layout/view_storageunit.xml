@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_selectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/selectALl"
+        android:textColor="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_undercover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/underCover" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_covered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/coveredRv" />
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/driveStorage" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_interior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/interior" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_public"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Public" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Private" />
+</LinearLayout>

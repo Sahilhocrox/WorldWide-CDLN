@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_marginTop="10dp"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/ColorblackText"
+                android:text="@string/driverdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:id="@+id/etBrowse"
+                    android:layout_weight="1"
+                    android:background="@drawable/editext_modification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:ignore="TextFields" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvBrowse"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/textview_modification"
+                    android:text="@string/browse"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="11dp"
+                    android:paddingBottom="11dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etComment"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="20dp"
+                android:padding="4dp"
+                android:inputType="text"
+                android:background="@drawable/editext_modification"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvSubmit"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textview_modification"
+                android:text="@string/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:padding="3dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/worldwide"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

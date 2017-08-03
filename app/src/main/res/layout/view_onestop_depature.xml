@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="DESTINATION INFORMATION"
+        android:textColor="@color/ColorblackText"
+
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street Number"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etdesStreetNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_modification"
+                android:hint="Street Number"
+                android:imeOptions="actionNext"
+
+                android:inputType="number"
+                android:padding="8dp"
+
+                android:singleLine="true"
+
+                android:textColorHint="@color/colordarkgrey"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street Name"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etdesStreetName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_modification"
+                android:hint="Street Name"
+                android:imeOptions="actionNext"
+
+                android:inputType="text"
+                android:padding="8dp"
+
+                android:singleLine="true"
+
+                android:textColorHint="@color/colordarkgrey"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zip"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etdesZip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_modification"
+                android:hint="Zip"
+                android:imeOptions="actionNext"
+
+                android:inputType="number"
+                android:padding="8dp"
+
+                android:singleLine="true"
+
+                android:textColorHint="@color/colordarkgrey"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etdesCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_modification"
+                android:hint="Country"
+                android:imeOptions="actionNext"
+
+                android:inputType="text"
+                android:padding="8dp"
+
+                android:singleLine="true"
+
+                android:textColorHint="@color/colordarkgrey"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etdesTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_modification"
+                android:hint="Time"
+                android:imeOptions="actionNext"
+
+                android:inputType="number"
+                android:padding="8dp"
+
+                android:singleLine="true"
+
+                android:textColorHint="@color/colordarkgrey"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/calender"
+                android:text="Date"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomEditText
+                android:id="@+id/etdesDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_modification"
+                android:hint="Date"
+                android:imeOptions="actionDone"
+
+                android:inputType="number"
+                android:padding="8dp"
+
+                android:singleLine="true"
+
+                android:textColorHint="@color/colordarkgrey"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_modification"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/post"
+        android:textColor="@color/colorWhite" />
+
+
+</LinearLayout>

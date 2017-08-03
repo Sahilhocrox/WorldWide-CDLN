@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackGrey"
+    tools:context="com.hocrox.worldwidecdln.productdetail.ProductListActivity">
+
+    <com.hocrox.worldwidecdln.utils.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/white_stroke_rectangle"
+        android:drawableRight="@drawable/search"
+        android:hint="Search Your Products"
+        android:padding="12dp"
+        android:textColor="@color/ColorblackText"
+        android:layout_marginBottom="5dp"
+        android:textColorHint="@color/colorgreytext"
+        android:textSize="14sp" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+
+        android:id="@+id/rl_productlist">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

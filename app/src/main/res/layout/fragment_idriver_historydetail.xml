@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvTripInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tripinfo"
+                android:textColor="@color/ColorblackText"
+                android:textStyle="bold" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvClientTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTripInfo"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorgreytext"
+
+                android:text="@string/clienttitle" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvClientDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+             android:textColor="@color/colorgreytext"
+                android:text="@string/clienttext"
+                tools:ignore="RtlHardcoded" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvDestinationInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvClientTitle"
+                android:layout_marginTop="20dp"
+                android:text="@string/departureInformation"
+                android:textColor="@color/ColorblackText"
+                android:textStyle="bold" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorgreytext"
+
+                android:layout_below="@+id/tvDestinationInfo"
+                android:layout_marginTop="6dp"
+                android:text="@string/text" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvText1"
+                android:textColor="@color/colorgreytext"
+
+                android:layout_marginTop="2dp"
+                android:text="@string/text1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                    android:id="@+id/tvText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorgreytext"
+
+                    android:layout_below="@+id/tvText2"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/text2" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                    android:id="@+id/tvText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvText2"
+                    android:textColor="@color/colorgreytext"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/tvText3"
+                    android:text="@string/text3"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </LinearLayout>
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorgreytext"
+
+                android:layout_below="@+id/tvText3"
+                android:layout_marginTop="2dp"
+                android:text="@string/text4" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvDestinationInfo_one"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvText5"
+                android:layout_marginTop="20dp"
+                android:text="@string/destinationinfo"
+                android:textColor="@color/ColorblackText"
+                android:textStyle="bold" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDestinationInfo_one"
+                android:textColor="@color/colorgreytext"
+
+                android:layout_marginTop="6dp"
+                android:text="@string/text" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvText6"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorgreytext"
+
+                android:text="@string/text1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                    android:id="@+id/tvText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvText7"
+                    android:textColor="@color/colorgreytext"
+
+                    android:layout_marginTop="2dp"
+                    android:text="@string/text2" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                    android:id="@+id/tvText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvText7"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/tvText8"
+                    android:textColor="@color/colorgreytext"
+
+                    android:text="@string/text3"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvText10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorgreytext"
+
+                android:layout_below="@+id/tvText9"
+                android:layout_marginTop="3dp"
+                android:text="@string/text4" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvText10"
+                android:layout_marginTop="20dp"
+                android:text="@string/pricetitle"
+                android:textColor="@color/colorgreytext" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/tvPrice"
+                android:text="@string/notes"
+                android:textColor="@color/colorgreytext" />
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/tvNote"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/textview_modification"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="10dp"
+                android:text="@string/close"
+                android:id="@+id/tvClose"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

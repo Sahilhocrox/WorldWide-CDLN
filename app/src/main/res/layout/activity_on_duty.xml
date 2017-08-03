@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGrey"
+    android:orientation="vertical"
+    tools:context="com.hocrox.worldwidecdln.imdriver.Fragments.OnDutyFragment">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBackGrey" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/change"
+            android:paddingLeft="20dp"
+            android:id="@+id/btnChange"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="20dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_modification"/>
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvVehicleType1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/vehicleType"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvVehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvVehicleType1"
+            android:text="Car"
+            android:padding="4dp"
+            android:textColor="@color/ColorblackText" />
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvVehicleModel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/tvVehicleType1"
+            android:text="@string/vehicleModel"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvVehicleModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVehicleModel1"
+            android:layout_toRightOf="@+id/tvVehicleModel1"
+            android:text="Car Model"
+            android:layout_below="@+id/tvVehicleType"
+            android:padding="4dp"
+
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvVehicleYear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvVehicleModel"
+            android:text="@string/vehicleYear"
+            android:padding="4dp"
+
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvVehicleYear"
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVehicleYear1"
+            android:layout_toRightOf="@+id/tvVehicleYear1"
+            android:text="YYYY"
+            android:layout_below="@+id/tvVehicleModel1"
+            android:textColor="@color/ColorblackText" />
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvVehicleCapacity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+
+            android:layout_below="@+id/tvVehicleYear"
+            android:text="@string/vehicleCapacity"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvVehicleCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+
+            android:layout_below="@+id/tvVehicleYear"
+            android:layout_alignBaseline="@+id/tvVehicleCapacity1"
+            android:layout_toRightOf="@+id/tvVehicleCapacity1"
+            android:text="Added Items"
+            android:textColor="@color/ColorblackText" />
+
+
+
+
+
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvPickUp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvVehicleCapacity1"
+            android:text="@string/pickUps"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvPickUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+
+            android:layout_below="@+id/tvVehicleCapacity1"
+            android:layout_alignBaseline="@+id/tvPickUp1"
+            android:layout_toRightOf="@+id/tvPickUp1"
+            android:text="Added Items"
+            android:textColor="@color/ColorblackText" />
+
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvDailybalance1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/tvPickUp1"
+            android:text="@string/dailyBalance"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvDailybalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+
+            android:layout_below="@+id/tvPickUp1"
+            android:layout_alignBaseline="@+id/tvDailybalance1"
+            android:layout_toRightOf="@+id/tvDailybalance1"
+            android:text="@string/moneyMade"
+            android:textColor="@color/ColorblackText" />
+
+
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvDailyExpenses1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/tvDailybalance1"
+            android:text="@string/dailyExpenses"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvDailyExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+
+            android:layout_below="@+id/tvDailybalance1"
+            android:layout_alignBaseline="@+id/tvDailyExpenses1"
+            android:layout_toRightOf="@+id/tvDailyExpenses1"
+            android:text="$0.00"
+            android:textColor="@color/ColorblackText" />
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvFourHours1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/tvDailyExpenses1"
+            android:text="@string/hoursTotal"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvFourHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+
+            android:layout_below="@+id/tvDailyExpenses1"
+            android:layout_alignBaseline="@+id/tvFourHours1"
+            android:layout_toRightOf="@+id/tvFourHours1"
+            android:text="$0.00"
+            android:textColor="@color/ColorblackText" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/history"
+            android:paddingLeft="40dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/btnHistory"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tvFourHours"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="40dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_modification"/>
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvOnHourDuty1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/btnHistory"
+            android:text="@string/onDutyHours"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvOnHourDuty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+
+            android:layout_below="@+id/btnHistory"
+            android:layout_alignBaseline="@+id/tvOnHourDuty1"
+            android:layout_toRightOf="@+id/tvOnHourDuty1"
+            android:text="0.00"
+            android:textColor="@color/ColorblackText" />
+
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvWeekHours1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/tvOnHourDuty"
+            android:text="@string/weekHours"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvWeekHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+
+            android:layout_below="@+id/tvOnHourDuty"
+            android:layout_alignBaseline="@+id/tvWeekHours1"
+            android:layout_toRightOf="@+id/tvWeekHours1"
+            android:text="0.00"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvLastonDuty1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/tvWeekHours"
+            android:text="@string/lastonDuty"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvLastonDuty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/tvWeekHours"
+            android:layout_alignBaseline="@+id/tvLastonDuty1"
+            android:layout_toRightOf="@+id/tvLastonDuty1"
+            android:text="DD/MM,HH:MM"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvTimeUnit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/tvLastonDuty"
+            android:text="@string/timeUnit"
+            android:textColor="@color/ColorblackText" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvTimeUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@+id/tvLastonDuty"
+            android:layout_alignBaseline="@+id/tvTimeUnit1"
+            android:layout_toRightOf="@+id/tvTimeUnit1"
+            android:text="DD/MM,HH:MM"
+            android:textColor="@color/ColorblackText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/mySchedule"
+            android:paddingLeft="25dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/btnMySchedule"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tvTimeUnit"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="25dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_modification"/>
+
+
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_selectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/selectALl"
+        android:textColor="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_distrubution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/distuributiionCenter" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_climate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/climateControlled" />
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Private" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_public"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Public" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_automated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/automated" />
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_railway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/railway" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_packing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/packing" />
+
+</LinearLayout>

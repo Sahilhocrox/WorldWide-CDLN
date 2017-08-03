@@ -1,0 +1,47 @@
+<LinearLayout android:layout_width="match_parent"
+    android:id="@+id/ll_root"
+    android:layout_marginTop="2dp"
+android:paddingTop="10dp"
+
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_stroke_rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ColorblackText"
+        android:layout_weight="2"
+        android:paddingLeft="6dp"
+        android:id="@+id/tvClientName"
+        android:text="@string/clientname"/>
+
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ColorblackText"
+        android:layout_weight="1.3"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvDay"
+        android:text="@string/daytime"/>
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/ColorblackText"
+        android:layout_weight="1"
+        android:id="@+id/tvPayment"
+        android:text="@string/payment"/>
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPaid"
+        android:textColor="@color/ColorblackText"
+        android:layout_weight="0.8"
+        android:text="@string/paid"/>
+</LinearLayout>
+

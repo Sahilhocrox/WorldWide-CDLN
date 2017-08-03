@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select Items To Be Transported"
+            android:id="@+id/tvTitle"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/ic_close_black_24dp" />
+
+    </RelativeLayout>
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvAddItems"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/onlystroke_rectangle"
+                android:orientation="horizontal">
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvAdultAdd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvAdultTextAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+
+                    android:text="0" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvAdultMinus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Adults 18+"
+                android:textColor="@color/ColorblackText"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/onlystroke_rectangle"
+                android:orientation="horizontal">
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvYouthAdd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvYouthTextAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+
+                    android:text="0" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvYouthMinus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Youth 18+"
+                android:textColor="@color/ColorblackText"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/onlystroke_rectangle"
+                android:orientation="horizontal">
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvLuggageAdd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvLuggageTextAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+
+                    android:text="0" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvLuggageMinus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Luggage"
+                android:textColor="@color/ColorblackText"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/onlystroke_rectangle"
+                android:orientation="horizontal">
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvBoxesAdd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvBoxTextAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+
+                    android:text="0" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvBoxMinus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Boxes"
+                android:textColor="@color/ColorblackText"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/onlystroke_rectangle"
+                android:orientation="horizontal">
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvEnvelopeAdd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvenevelopeTextAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+
+                    android:text="0" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvEnevelopeMinus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="20sp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Envelopes"
+                android:textColor="@color/ColorblackText"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       android:layout_marginTop="30dp"
+        android:background="@drawable/textview_modification"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="ADD-on Trailer"
+
+        android:textColor="@color/colorWhite" />
+
+
+</LinearLayout>

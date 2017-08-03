@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/truck" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/onlystroke_rectangle"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/addSharedNetwork"
+                android:textColor="@color/ColorblackText" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvNetwork1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network"
+                    android:textColor="@color/ColorblackText" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvNetwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tvNetwork1"
+                    android:text="American Airlines"
+                    android:textColor="@color/ColorblackText" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvAdmin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetwork1"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/admin"
+                    android:textColor="@color/ColorblackText" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvAdmin1"
+                    android:layout_alignStart="@+id/tvNetwork"
+
+                    android:layout_below="@+id/tvNetwork1"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvAdmin1"
+                    android:text="Name"
+                    android:textColor="@color/ColorblackText" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvMembers1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAdmin"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/members"
+                    android:textColor="@color/ColorblackText" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvMembers1"
+                    android:layout_alignStart="@+id/tvNetwork"
+                    android:layout_below="@+id/tvAdmin"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_toRightOf="@+id/tvMembers1"
+                    android:text="Name"
+                    android:textColor="@color/ColorblackText" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvCreated1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMember"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/created"
+                    android:textColor="@color/ColorblackText" />
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvCreated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvCreated1"
+                    android:layout_alignStart="@+id/tvNetwork"
+                    android:layout_below="@+id/tvMember1"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvCreated1"
+                    android:text="DD/MM/YYYY"
+                    android:textColor="@color/ColorblackText" />
+
+
+            </RelativeLayout>
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvRefernece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvCreated1"
+                android:layout_alignStart="@+id/tvNetwork"
+                android:layout_below="@+id/tvNetwork1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/tvCreated1"
+                android:text="@string/referenceNumber"
+                android:textColor="@color/ColorblackText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.hocrox.worldwidecdln.utils.CustomEditText
+                    android:id="@+id/etReference"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignStart="@+id/etAdults2nd"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tvAdults"
+                    android:background="@drawable/editext_modification"
+                    android:gravity="center_vertical"
+                    android:hint="@string/referenceNumber"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/ColorblackText"
+                    android:textSize="12sp" />
+
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:id="@+id/tvAdd"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/textview_modification"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/add"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvReferedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/referredBy"
+                android:textColor="@color/ColorblackText" />
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Manish"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="9915410703"
+                android:textColor="@color/ColorblackText" />
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvNetworkPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/networkPrice"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvDollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text=" 15%"
+                android:textColor="@color/ColorblackText" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="1dp"
+                android:text="@string/disclamer"
+                android:textColor="@color/colorgreytext"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/iAggree" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+             android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+
+
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvTotal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Total Price"
+                android:textColor="@color/ColorblackText" />
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tvBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textview_modification"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/buyJoin"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

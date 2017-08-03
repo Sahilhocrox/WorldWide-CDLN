@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBackArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/leftarrow" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/ivBackArrow"
+                android:gravity="center_horizontal"
+                android:text="@string/storageSearch"
+                android:id="@+id/tv_toolbar"
+                android:textColor="@color/ColorblackText" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colormidgrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvContinent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="NorthAmerica"
+            android:textColor="@color/black"
+       />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvNation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="USA"
+            android:gravity="center"
+            android:textColor="@color/black"
+    />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvNetworks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.2"
+            android:text="ALL NETWORKS"
+            android:textColor="@color/black"
+           />
+
+
+    </LinearLayout>
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/avaliableEnding"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <com.hocrox.worldwidecdln.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/storageUnitLocation"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvEditing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:background="@drawable/button_modification"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/editingSearch"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+        android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/button_modification"
+            android:text="CLEAR"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/button_modification"
+            android:text="@string/search"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+             android:gravity="center"
+            android:id="@+id/tvSize"
+            android:textColor="@color/ColorblackText"
+            android:text="5 Feet By 5 Feet "
+            android:layout_height="match_parent" />
+
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/ColorblackText"
+            android:text="Storage Size"
+            android:layout_height="match_parent" />
+        <com.hocrox.worldwidecdln.utils.CustomTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Sort By"
+            android:textColor="@color/ColorblackText"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rl_searchList"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
+
+

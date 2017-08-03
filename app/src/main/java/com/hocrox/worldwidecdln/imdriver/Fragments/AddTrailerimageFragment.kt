@@ -1,0 +1,40 @@
+package com.hocrox.worldwidecdln.imdriver.Fragments
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Toast
+import com.hocrox.worldwidecdln.R
+import kotlinx.android.synthetic.main.fragment_imdriver_trailerimg.*
+
+class AddTrailerimageFragment : BaseFragment(), View.OnClickListener {
+    override fun onClick(v: View?) {
+
+        when (v!!.id) {
+
+            R.id.tvSubmit -> {
+
+
+                Toast.makeText(activity,"Submit Successfully",Toast.LENGTH_LONG).show()
+
+            }
+        }
+
+    }
+
+    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+        var view = inflater?.inflate(R.layout.fragment_imdriver_trailerimg, container, false)
+
+        return view
+    }
+
+    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+        tvSubmit.setOnClickListener(this)
+
+
+    }
+
+
+}

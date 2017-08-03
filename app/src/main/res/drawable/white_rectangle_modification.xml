@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/white_rectangle_blue_stroke"
+        /> <!-- pressed -->
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/white_rectangle_blue_stroke"
+        /> <!-- focused -->
+    <item
+        android:drawable="@drawable/white_rectangle"
+        /> <!-- default -->
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/white_rectangle_blue_stroke"
+        /> <!-- focused -->
+
+
+
+</selector>

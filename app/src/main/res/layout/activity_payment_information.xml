@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hocrox.worldwidecdln.lifts.AddNoteActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBackArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/leftarrow" />
+
+            <com.hocrox.worldwidecdln.utils.CustomTextView
+                android:id="@+id/tv_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/ivBackArrow"
+                android:gravity="center_horizontal"
+                android:text="@string/needALift"
+                android:textColor="@color/ColorblackText" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colormidgrey" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+
+                        <ImageView
+                            android:id="@+id/ivPerson"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/truck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+
+                        <ImageView
+                            android:id="@+id/ivTruck"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/truck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvViewProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_modification"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp"
+                            android:text="View Profile"
+                            android:textColor="@color/colorWhite" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/button_modification"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="14dp"
+                            android:paddingTop="10dp"
+                            android:text="View Reviews"
+                            android:textColor="@color/colorWhite" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.hocrox.worldwidecdln.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/onlystroke_rectangle"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="PAYMENT INFORMATION"
+                    android:textColor="@color/ColorblackText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvDriverOutOfRoute1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Driver Out Of Route miles"
+
+                            android:textColor="@color/ColorblackText" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvDriverOutOfRoute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvDriverOutOfRoute1"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tvDriverOutOfRoute1"
+                            android:gravity="end"
+                            android:text="$25"
+                            android:textColor="@color/ColorblackText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/tvDriverOutOfRoute1"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorBackGrey" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvRoutePayment1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvDriverOutOfRoute1"
+                            android:layout_marginTop="15dp"
+                            android:text="Out of Route payment Total"
+                            android:textColor="@color/ColorblackText" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvRoutePayment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvRoutePayment1"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tvRoutePayment1"
+                            android:gravity="end"
+                            android:text="$25"
+                            android:textColor="@color/ColorblackText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/tvRoutePayment1"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorBackGrey" />
+
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvDestination1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvRoutePayment1"
+                            android:layout_marginTop="15dp"
+                            android:text="Pick Up to destination address miles"
+                            android:textColor="@color/ColorblackText" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvDestination1"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tvRoutePayment"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/tvDestination1"
+                            android:layout_toStartOf="@+id/tvRoutePayment"
+                            android:text="25"
+                            android:textColor="@color/ColorblackText"
+                            android:textSize="16sp" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/tvDestination1"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorBackGrey" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvTrip1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvDestination1"
+                            android:layout_marginTop="15dp"
+                            android:text="Total trip miles"
+                            android:textColor="@color/ColorblackText" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvTrip1"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+
+                            android:text="$25"
+
+                            android:textColor="@color/ColorblackText"
+                            android:textSize="16sp" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/tvTrip1"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorBackGrey" />
+
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvTripPrice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTrip1"
+                            android:layout_marginTop="15dp"
+                            android:text="Trip Price "
+                            android:textColor="@color/ColorblackText"
+
+                            />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvTripPrice1"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:text="50"
+                            android:textColor="@color/ColorblackText"
+                            android:textSize="16sp" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/tvTripPrice1"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorBackGrey" />
+
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvBonus1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTripPrice1"
+                            android:layout_marginTop="15dp"
+                            android:text="Tip/Bonus"
+                            android:textColor="@color/ColorblackText"
+
+                            android:textSize="16sp" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomEditText
+                            android:id="@+id/etBonus"
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvBonus1"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/grey_onlystroke_rectangle"
+                            android:hint="$"
+                            android:padding="2dp"
+
+                            android:textColor="@color/ColorblackText"
+                            android:textSize="16sp" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/tvBonus1"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorBackGrey" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:id="@+id/tvTotalTrip1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvBonus1"
+                            android:layout_marginTop="15dp"
+                            android:text="Total trip Costs"
+                            android:textColor="@color/ColorblackText"
+
+                            />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvTotalTrip1"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:text="$149"
+                            android:textColor="@color/ColorblackText"
+
+                            android:textSize="16sp" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/tvTotalTrip1"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorBackGrey" />
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/btnAddNote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/button_modification"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="ADD NOTE"
+                            android:textColor="@color/colorWhite" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_weight="1" />
+
+
+                        <Button
+                            android:id="@+id/btnRequest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+
+                            android:background="@drawable/button_modification"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="REQUEST"
+                            android:textColor="@color/colorWhite" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/grey"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Driver Arrive Time "
+                            android:textColor="@color/ColorblackText"
+                            android:textSize="16sp" />
+
+                        <com.hocrox.worldwidecdln.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="40 Minutes"
+                            android:textColor="@color/ColorblackText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <com.hocrox.worldwidecdln.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Worldwide CDL Network Copyright 2007"
+                        android:textColor="@color/ColorblackText"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
